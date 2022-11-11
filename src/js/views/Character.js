@@ -25,16 +25,18 @@ export const Character =()=> {
   const [details, setDetails] = useState({});
   const [planetDetails, setPlanetDetails] = useState({});
   const characterHomeWorld = details?.homeworld;
-  const characterHomeWorldId= Number(characterHomeWorld?.split('/').slice(-2)[0]);
-  const characterHomeWorldName= planetDetails?.name;
+  const characterHomeWorldId= characterHomeWorld?.split('/').slice(-2)[0];
+  
   
 
   useEffect (() => {
 	  getCharacter(currentCharacter).then(setDetails).catch(handleError);
+    console.log("entra primer useffect");
 	}, [currentCharacter]);
   useEffect (() => {
-	  getPlanet().then(setPlanetDetails).catch(handleError);
-	}, []);
+	  getPlanet(characterHomeWorldId).then(setPlanetDetails).catch(handleError);
+    console.log("entra segundo useffect");
+	}, [details]);
 
   function handleError(err) {
 	  setErrorState({HasError: true, message: err.message});
@@ -67,13 +69,13 @@ export const Character =()=> {
         key5="Eye Color: "
         value5={details.eye_color}
         key6="Homeworld :"
-        value6={<Link className ="SwLink"to={`/planets/${characterHomeWorldId}`}>I'can't tell you the name, but i can show you.</Link>}
+        value6={<Link className ="SwLink"to={`/planets/${characterHomeWorldId}`}>{planetDetails?.name}</Link>}
         WikiSite="Wikipedia site: "
         WikiUrl={wikiPrefix+details.name}
         wikiDisplay={`Find more about ${details.name}`}
        />)}
 
-{console.log(characterHomeWorldName)}
+
 </div>
 
     
