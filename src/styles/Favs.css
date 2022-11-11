@@ -1,0 +1,52 @@
+:root{
+    --blue: rgba(61,90,254, 0.8);
+    --light-blue: rgba(37, 193, 255, 0.8);
+    --red:rgb(107, 15, 21, 0.8);
+    --light-red: rgba(235,33,46, 0.8);
+    --green: rgba(12, 131, 1, 0.8);
+    --light-green:rgba(21, 255, 0, 0.8);
+
+}
+.FavContainer{
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(104, 91, 91, 0.911);
+    width: 25rem;
+    height:4rem;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(233 233 233 / 0.5);
+    margin: .2rem;
+    transition: 300ms ease;
+}
+
+.FavContainer:hover{
+    background:linear-gradient(45deg, var(--light-red), var(--red) );
+}
+
+.DeleteFav{
+    background-color: transparent;
+    border: none;
+    fill: rgba(255, 183, 0, 0.8);
+}
+
+.DeleteFav:hover{
+    fill: red;
+    color: red;
+}
+.FavsMenu{
+    background-color: transparent;
+    box-sizing: border-box;
+
+
+}
+
+.FavImg{
+    object-fit: contain;
+    border-radius: 50%;
+    margin-right: .5rem;
+    border: 2px solid gray;
+    outline: 2px solid rgba(107, 0, 0, 0.61);
+}

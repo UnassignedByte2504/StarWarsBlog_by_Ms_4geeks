@@ -1,0 +1,261 @@
+@import url('https://db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi');
+@font-face {font-family: "Star Jedi"; src: url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot"); src: url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff") format("woff"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.svg#Star Jedi") format("svg"); }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.StarHeaderMS{
+    border-bottom: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/heic1806b_1.jpg);
+}
+
+.StarTitleMS{
+    
+    width: 20rem;
+    font-family: 'Star Jedi';
+    font-size: 60px;
+    background: linear-gradient(90deg, yellow 0%, orange 25%, rgb(252, 209, 130) 50%, white 75%, yellow);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 8s linear infinite;
+    
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.StarTitleMS:first-child{
+    font-family: 'Star Jedi';
+    font-size: 60px;
+    margin-bottom: -1.7rem;
+}
+
+
+.StarLogoMS{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center; 
+}
+
+.LogoLink{
+    text-decoration: none;
+}
+
+.LogoLink h1 {
+    cursor: pointer;
+}
+
+.StarNavBarMS{
+    background-color: transparent;
+}
+
+.StarButtonsMS{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+:root{
+    --blue: rgba(61,90,254, 0.8);
+    --light-blue: rgba(37, 193, 255, 0.8);
+    --red:rgb(107, 15, 21, 0.8);
+    --light-red: rgba(235,33,46, 0.8);
+    --green: rgba(12, 131, 1, 0.8);
+    --light-green:rgba(21, 255, 0, 0.8);
+
+}
+.NavButtonJediMS:focus::before{
+    box-shadow: 0px 0px 20px 5px white;
+    transition: width .5s ease;
+    width: 100%;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+.NavButtonJediMS:focus{
+    margin-left: .2rem;
+    margin-right: .2rem;
+    transition: text-align .8s ease;
+    text-align: left;
+}
+.NavButtonJediMS:hover::before{
+    box-shadow: 0px 0px 20px 5px white;
+    transition: width .4s ease;
+    width: 100%;
+}
+.NavButtonJediMS::before{
+    border-radius: 1rem;
+    background: linear-gradient(to right,
+    transparent,
+     var(--blue),  
+     var(--light-blue));
+    content: "";
+    position: absolute;
+    top:.7rem;
+    left:0px;
+    height: 50%;
+    width: 0%;
+
+}
+.NavButtonJediMS{
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    position: relative;
+    background-color: transparent;
+    padding: .5rem;
+    border: none;
+    width:10rem;
+    text-align: center;
+   
+}
+.NavButtonJediMS:hover{
+    transition: text-align .8s ease;
+    text-align: left;
+}
+
+/* end of jedi buttons */
+
+.NavButtonSithMS:hover::before{
+    /* border: solid 2px white; */
+    box-shadow: 0px 0px 20px 5px white;
+    transition: width .4s ease;
+    width: 100%;
+}
+.NavButtonSithMS:hover{
+    transition: text-align .8s ease;
+    text-align: left;
+}
+.NavButtonSithMS:focus::before{
+    /* border: solid 2px white; */
+    box-shadow: 0px 0px 20px 5px white;
+    transition: width .5s ease;
+    width: 100%;
+}
+.NavButtonSithMS:focus{
+    transition: text-align .8s ease;
+    text-align: left;
+}
+.NavButtonSithMS::before{
+ 
+    border-radius: 1rem;
+    background: linear-gradient(to right,
+    transparent,
+     var(--red),  
+     var(--light-red));
+    content: "";
+    position: absolute;
+    top:.7rem;
+    left:0px;
+    height: 50%;
+    width: 0%;
+
+}
+.NavButtonSithMS{
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    background-color: transparent;
+    padding: .5rem;
+    border: none;
+    width:10rem;
+    text-align: center;
+   
+}
+
+.NavButtonFavsMS:hover::before{
+    /* border: solid 2px white; */
+    box-shadow: 0px 0px 20px 5px white;
+    transition: width .4s ease;
+    width: 100%;
+}
+.NavButtonFavsMS:hover{
+    transition: text-align .8s ease;
+    text-align: left;
+}
+.NavButtonFavsMS:focus::before{
+    /* border: solid 2px white; */
+    box-shadow: 0px 0px 20px 5px white;
+    transition: width .5s ease;
+    width: 100%;
+}
+.NavButtonFavsMS:focus{
+    transition: text-align .8s ease;
+    text-align: left;
+    width: 12rem;
+}
+.NavButtonFavsMS::before{
+ 
+    border-radius: 1rem;
+    background: linear-gradient(to right,
+    transparent,
+     var(--green),  
+     var(--light-green));
+    content: "";
+    position: absolute;
+    top:.7rem;
+    left:0px;
+    height: 50%;
+    width: 0%;
+
+}
+.NavButtonFavsMS{
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    background-color: transparent;
+    padding: .5rem;
+    border: none;
+    width:10rem;
+    text-align: center;
+   
+}
+
+.FavsCounter{
+    margin-left: 10px;
+    text-align: center;
+    background-color: rgba(255, 183, 0, 0.404) ;
+    color: rgba(255, 255, 255, 0.486);
+    font-family: 'Orbitron', san sans-serif;
+    border-radius: 100%;
+    width: 1.5rem;
+}
+
+.FavsCounter2{
+    text-align: center;
+    background: linear-gradient(45deg, yellow 0%, orange 25%, white 75%, yellow, transparent ); 
+    color: rgb(0, 0, 0);
+    font-family: 'Orbitron', san sans-serif;
+    font-weight: bolder;
+    border-radius: 100%;
+    width: 1.5rem;
+    box-shadow: 0px 0px 10px 5px yellow;
+    margin-left: 10px;
+
+    animation: transform 5s  infinite;
+}
+
+@keyframes transform {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+
+    }
+}
+

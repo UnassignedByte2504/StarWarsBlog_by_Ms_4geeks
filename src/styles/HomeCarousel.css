@@ -1,0 +1,20 @@
+.CarouselImg{
+    background:linear-gradient(to top, rgba(255, 0, 0, 0.5), rgb(146 0 0 / 0.5), rgb(0 0 0 / 0.5),rgb(0 0 0 / 0.2), transparent 60%);
+    height:30vh;
+    width:30vh !important; 
+    object-fit:cover;
+    aspect-ratio: 1.8/1;
+    margin-left: 37%;
+    border-radius: 100%;
+    outline: 5px solid rgba(146, 0, 0, 0.8);
+    
+}
+.CarouselContainer{
+    color:transparent;  
+}
+
+.carousel-item{
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+}

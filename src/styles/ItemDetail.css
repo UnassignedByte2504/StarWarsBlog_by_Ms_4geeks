@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.ItemContainer{
+
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top:2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+    padding: 1rem;
+}
+
+.ItemImg{
+    margin-right: 2rem;
+
+}
+
+.ItemImg > img {
+    object-fit: contain;
+    height: 20vw;
+    width: 15vw;
+}
+
+.ItemDetails{
+    width: 100%;
+}
+.ItemTitle{
+    max-width: 100%;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgb(146 0 0 / 0.5), rgb(0 0 0 / 0.5),rgb(0 0 0 / 0.2), transparent 90%);
+    font-family: 'orbitron', sans-serif;
+
+}
+
+.ItemPropTag{
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+}
+.ItemPropValue{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: large;
+    font-family: 'Orbitron', sans-serif;
+    color:rgba(255, 255, 255, 0.8);
+}
+
+.WikiLink{
+    cursor: pointer;
+    font-weight: bold;
+    color: rgba(0 0 0 / 0.8);
+    text-decoration: none;
+}
+
+.WikiLink:hover{
+
+    color: rgba(255, 0, 0, 0.5);
+
+}

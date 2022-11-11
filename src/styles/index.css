@@ -1,3 +1,47 @@
 /* 
     General Styles
 */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi');
+@font-face {font-family: "Star Jedi"; src: url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot"); src: url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff") format("woff"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.svg#Star Jedi") format("svg"); }
+
+body{
+    height:100vh;
+    width:100vw;
+    margin:0px;
+    background-color: black;
+}
+.StarWarsSectionMainContainer{
+    background-image: url('https://starwarsblog.starwars.com/wp-content/uploads/2021/08/inside-intel-the-death-star-TALL.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0%;
+    position: relative;
+    height: 100vh;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.StarWarsSectionHeader{
+    margin-bottom: 2rem;
+}
+.SwLink{
+    text-decoration: none;
+    color: rgba(255 255 255 / 0.8);
+    transition: 200ms linear;
+}
+
+.SwLink:hover{
+    color: rgb(255, 196, 0)
+}
+
+.FavLink{
+    text-decoration: none;
+    color:rgb(255, 196, 0);
+    font-family: 'Orbitron', sans-serif;
+
+}

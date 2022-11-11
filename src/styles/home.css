@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+:root {
+    --card_width: 250px;
+    --row_increment: auto;
+    --card_small: 26;
+    --card_med: 33;
+    --card_large: 45;
+}
+.CountdownContainer{
+    
+background-color: rgba(1,1,1,0.5);
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 40px;
+font-family: 'Orbitron', sans-serif;
+}
+
+.StarWarsSectionHeader{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem;
+    width: 80vw;
+
+}
+
+.StarWarsSectionHeader > .StarWarsSectionSearch{
+    align-self: flex-end;
+    padding: .5rem;
+}
+
+.StarWarsSectionHeader > .StarWarsSectionSearch > input{
+
+    width: 15vw;
+    height: 2vw;
+    border-radius: 5px;
+    border:none;
+    border-bottom: 1px solid red!important;
+    padding: .5rem;
+    background-color: rgba(1,1,1,0.8) ;
+    color: rgba(255 255 255 / 0.8);
+    
+}
+
+.StarWarsSectionHeader > .StarWarsSectionSearch > input:hover{
+
+    box-shadow: 0px 0px 10px 5px rgba(255 255 255 / 0.06);
+    
+}
+
+.StarWarsSectionHeader > .StarWarsSectionSearch > input:focus{
+
+    box-shadow: 0px 0px 10px 5px rgba(255 255 255 / 0.06);
+    outline: none;
+    color: rgba(255 255 255 / 0.8);
+    
+}
+
+.StarWarsSectionHeader > .StarWarsSectionNav{
+
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+}
+.StarWarsNavButton {
+    
+    background-color: transparent;
+    color: rgba(146, 0, 0, 0.8);
+    border: none;
+    transition: 100ms linear;
+}
+
+.StarWarsNavButton:hover{
+    scale:1.2;
+    color: rgb(255, 196, 0)
+}
+
+.StarWarsNavButton:active{
+    scale:0.8;
+    color: rgb(252, 240, 134)
+}
+
+
+.StarWarsSectionHeader > .StarWarsSectionNav span {
+
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+.StarWarsSectionHeader > .StarWarsSectionTitle {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: .5rem;
+
+}
+
+.StarWarsSectionContainer{
+
+    margin: 0;
+    padding-bottom: 1rem;
+    width: 80vw;
+    left: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+}
+
+.StarWarsFavsContainer{
+
+    margin: 0;
+    padding-bottom: 1rem;
+    width: 80vw;
+    left: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+}
+
+.HomeFavTitle{
+    margin-top: 4rem;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
+}
+
+.HomeFavTitleHidden{
+    display: none;
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+:root{
+    --card_border_radius: 16px;
+
+}
+.CardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 1rem 0.5rem;
+    background-color: rgba(255 255 255 / 0.08);
+    margin-bottom: auto;
+    border: 1px solid rgba(255 255 255 / 0.08);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.CardContainer:hover{
+    transition: ease 300ms;
+    scale: 1.06;
+    border: rgba(255, 196, 0, .5) solid 1px;
+}
+
+.CardContainer:focus{
+    transition: ease 300ms;
+    scale: 1.06;
+    border: rgba(255, 196, 0, .5) solid 1px;
+    border: none;
+    outline: none;
+}
+
+
+.CardImg{
+
+    width: 100%;
+    
+}
+
+.CardImg img{
+    overflow: hidden;
+    border-radius: 16px;
+    object-fit: contain;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1/ 1;
+}
+
+.CardFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: inherit;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border-radius: none;
+    background:linear-gradient(to top, rgba(255, 0, 0, 0.5), rgb(146 0 0 / 0.5), rgb(0 0 0 / 0.5),rgb(0 0 0 / 0.2), transparent 60%);
+}
+
+
+.ItemCardBtnGroup{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right:.25rem;
+    margin-left:.25rem;
+    padding: .25rem;
+}
+
+.StarWarsFavButtonOff{
+
+        background-color: transparent;
+        border: none;
+        fill: rgba(0, 0, 0, 0.5);
+        background-clip: text;
+}
+
+.StarWarsFavButtonOn{
+    background-color: transparent;
+    border: none;
+    fill: rgba(255, 183, 0, 0.8);
+
+}
+.StarWarsLearnMore{
+    font-size: 500;
+    letter-spacing: 2px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 10px;
+    outline-offset: 5px;
+
+}
+
+.StarWarsFavButtonOn:hover, .StarWarsFavButtonOff:hover{
+    transition: 400ms;
+    scale:1.1;
+    fill:rgb(255, 238, 0);
+}
+
+.StarWarsFavButtonOn:focus, .StarWarsFavButtonOff:focus{
+    transition: transform 500ms;
+    transform: rotateY(360deg);
+}
+
+.StarWarsFavButtonOn:focus:active, .StarWarsFavButtonOff:focus:active{
+    transition: transform 500ms;
+    transform: rotateY(360deg);
+}
