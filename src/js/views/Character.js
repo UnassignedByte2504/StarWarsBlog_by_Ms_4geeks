@@ -31,11 +31,9 @@ export const Character =()=> {
 
   useEffect (() => {
 	  getCharacter(currentCharacter).then(setDetails).catch(handleError);
-    console.log("entra primer useffect");
 	}, [currentCharacter]);
   useEffect (() => {
 	  getPlanet(characterHomeWorldId).then(setPlanetDetails).catch(handleError);
-    console.log("entra segundo useffect");
 	}, [details]);
 
   function handleError(err) {

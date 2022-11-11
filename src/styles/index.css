@@ -43,5 +43,10 @@ body{
     text-decoration: none;
     color:rgb(255, 196, 0);
     font-family: 'Orbitron', sans-serif;
+    transition: 500ms ease;
 
+}
+
+.FavLink:hover{
+    color:lime;
 }
